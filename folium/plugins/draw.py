@@ -61,6 +61,7 @@ class Draw(JSCSSMixin, MacroElement):
                 var layer = e.layer,
                     type = e.layerType;
                 var coords = JSON.stringify(layer.toGeoJSON());
+                console.log(coords);
                 layer.on('click', function() {
                     alert(coords);
                     console.log(coords);
